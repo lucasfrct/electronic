@@ -1,0 +1,5 @@
+voltDC		KEYWORD1
+sample		KEYWORD2
+meter		KEYWORD2
+voltage		KEYWORD2
+map			KEYWORD2

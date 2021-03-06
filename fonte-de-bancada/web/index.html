@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="smartsource">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="lib/materialize/css/materialize.min.css">
+	<script type="text/javascript" src="lib/materialize/js/materialize.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/smartsource.css">
+
+	<title>Fonte Inteligente</title>
+
+	<script type="text/javascript" src="lib/angular-1.7.2/angular.min.js"></script>
+
+	<script type="text/javascript" src="app/smartsource.module.js"></script>
+
+	<script type="text/javascript" src="app/nodemcu/nodemcu.controller.js"></script>
+	<script type="text/javascript" src="app/nodemcu/nodemcu.service.js"></script>
+
+</head>
+<body ng-controller="nodemcucontroller" class="imga" >
+	<section class="body">
+		<section class="display">
+			<section class="channel" ng-repeat=" channel in channels">
+				<div class="voltage">{{ channel.voltage }} V</div>
+				<div class="ampere">{{ channel.ampere }} A</div>
+				<div class="power">{{ ( channel.voltage * channel.ampere ).toFixed ( 2 ); }} W</div>
+			</section>
+			<section class="knob"></section>
+		</section>
+		<section class="panel">
+			<div class="control control-master">
+				<button class="shift" label="Shift">CH 1</button>
+				<button class="local" label="Local">CH 2</button>
+				<button class="power" label="Power">CH 3</button>
+			</div>
+			<div class="control control-menu">
+				<button>V-SET</button>
+				<button>I-SET</button>
+			</div>
+			<div class="control control-key">
+				<button>1</button>
+				<button>2</button>
+				<button>3</button>
+				<button>4</button>
+				<button>5</button>
+				<button>6</button>
+				<button>7</button>
+				<button>8</button>
+				<button>9</button>
+				<button>0</button>
+				<button>.</button>
+				<button>Esc</button>
+			</div>
+			<div class="control control-active">
+				<button>On/Off</button>
+			</div>
+		</section>
+	</section>
+</body>
+</html>

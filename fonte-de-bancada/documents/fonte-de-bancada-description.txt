@@ -1,0 +1,63 @@
+*********************************************************************************
+*							FONTE DE BANCADA									*
+*********************************************************************************
+* 	Autor: Lucas Costa 															*
+*	setembro de 2019															*
+*********************************************************************************
+
+Características Gerais
+	|
+	|____ Input
+	|	|____ Input Voltage: 					220.00 V
+	|	|____ Input Voltage Peak: 				311.12 V 				>>> 	(200 * sqrt(2))
+	|	|____ Input Current: 					818 mA
+	|	|____ Input Current Peak: 				1.157 A 				>>>		(0.818 * sqrt(2))
+	|	|____ Input Power: 						180.00 W
+	|	|____ Input Power Peak: 				254.55 W 				>>> 	(180 * sqrt(2))
+	|	|____ Input Frequency: 					45-63 Hz
+	|
+	|____ Output 
+	|	|____ Output Voltage: 					+30.00 V | -30.00 V
+	|	|____ Output Voltage Peak: 				+42.42 V | -42.42 V 	>>> 	(30 * sqrt(2))
+	|	|____ Output Current: 					6.00 A
+	|	|____ Output Current Peak: 				8.48 A 					>>> 	(6 * sqrt(2))
+	|	|____ Output Power: 					180 W
+	|	|____ Output Power Peak: 				254.55 W 				>>>		(180 * sqrt(2))
+	|	|____ Output Frequency: 				45-63 Hz
+	|	|____ Output Mode: 						AC/DC
+	|
+	|____ Meters: 
+	|	|____ Resoluition: 						10 bits (1024 points)
+	|	|
+	|	|____ Network
+	|	|	|____ V(n) - Network Voltage: 		0-311 V
+	|	|	|____ C(n) - Network Current: 		0-1.157 A
+	|	|	|____ f(n) - Network Frequency: 	0-100 Hz
+	|	|
+	|	|____ Secondary Transformer
+	|	|	|____ Vc(t) - Secondary Voltage: 	0 a +53 V | out = +37 V 	>>> 	max out = (37 * sqrt(2)) = 52.32 V
+	|	|	|____ Vs(t) - Secondary Voltage: 	0 a -53 V | out = -37 V 	>>> 	max out = (37 * sqrt(2)) = 52.32 V 
+	|	|	|____ Cc(t) - Secondary Current: 	0 a +9 A  | out = +6 A  	>>> 	max out = (6 * sqrt(2)) = 8.48 A
+	|	|	|____ Cs(t) - Secondary Current: 	0 a -9 A  | out = -6 A  	>>> 	max out = (6 * sqrt(2)) = 8.48 A
+	|	|	|____ f(t) - Secondary Frequency: 	0-100 Hz
+	|	|
+	|	|____ Service Voltage
+	|	|	|____ V(c) - CMOS Voltage: 			5 V (strict precision)
+	|	|	|____ V(s) - Support Voltage: 		12 V (strict precision)
+	|	|
+	|	|____ Power Supply
+	|		|____ Vc(p) - Supply Voltage: 		0 a +42.42 V
+	|		|____ Vs(p) - Supply Voltage: 		0 a -42.42 V
+	|		|____ Cc(p) - Supply Current: 		0 a +8.48 A
+	|		|____ Cs(p) - Supply Current: 		0 a -8.48 A
+	|		|____ f(p) - Supply Frequency: 		0-10000 Hz
+	|
+	|____ Controls Output: 
+	 	|____ Voltage Limiter: 		0-30 V
+		|____ Voltage Stabilizer: 	0-30 V
+		|____ Current Limiter: 		0-6 A
+		|____ Current Stabilizer: 	0-6 A
+		|____ Frequency: 			0-10000 Hz
+		|____ Angle Phase: 			0-360 °
+
+Normas IEC61000-4-11 / 4-14 / 4-28

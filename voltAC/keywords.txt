@@ -1,0 +1,8 @@
+voltAC		KEYWORD1
+sample		KEYWORD2
+sineWave	KEYWORD2
+meter		KEYWORD2
+voltage		KEYWORD2
+vpp		KEYWORD2
+mapVoltage	KEYWORD2
+frequency	KEYWORD2
